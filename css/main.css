@@ -1,0 +1,82 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	color: #aaa;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+#app {
+	width: 100%;
+	height: 100%;
+}
+
+.nav-bar {
+	height: 40px;
+	background-color: #333;
+}
+
+.menu-icon {
+	float: right;
+	margin-right: 20px;
+}
+
+.menu-icon:hover {
+	cursor: pointer;
+}
+
+.menu-icon div {
+	width: 35px;
+	height: 5px;
+	background-color: #aaa;
+	margin: 6px 0;
+}
+
+.hidden {
+	display: none;
+}
+
+#side-menu {
+	width: 100%;
+	height: calc(100% - 40px);
+	max-width: 410px;
+	position: absolute;
+	top: 40px;
+	z-index: 10;
+	background-color: #000;
+}
+
+#side-menu h2 {
+	margin: 0;
+	padding: 10px
+}
+
+#search-box {
+	width: calc(100% - 44px);
+	height: 25px;
+	font-size: 1em;
+	padding: 5px 20px;
+}
+
+#map {
+	text-align: center;
+	height: calc(100% - 40px);
+}
+
+#locations {
+	padding: 10px
+}
+
+.location {
+    padding: 10px;
+    list-style: none;
+}
+
+.location:hover, .location:focus {
+	cursor: pointer;
+	background-color: #333;
+}

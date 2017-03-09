@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cardiff Neighborhood Map</title>
+		<link rel="stylesheet" href="css/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div id="app">
+			<div id="side-menu">
+				<h2>Cardiff Locations</h2>
+				<div id="search">
+					<input id="search-box" placeholder="Filter Results" data-bind="textInput: search" />
+				</div>
+				<ul id="locations" data-bind="foreach: filtered_markers">
+					<li class="location" data-bind="text: name, click: clicked"></li>
+				</ul>
+			</div>
+			<div class="nav-bar">
+				<div class="menu-icon">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div id="map">There has been an error loading Google Maps. Please reload the page to try again.</div>
+		</div>
+
+		<script src='js/jquery-1.12.0.min.js'></script>
+		<script src='js/knockout-3.4.0.js'></script>
+		<script src='js/app.js'></script>
+		<script async defer
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy8TB5V8i9sEsvlE9rnLRxOXBV4iyIxcE&callback=initMap">
+		</script>
+
+	</body>
+</html>
